@@ -1,3 +1,4 @@
+<script src="../../Jquery/prettify.js"></script>
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
