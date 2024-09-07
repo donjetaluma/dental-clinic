@@ -11,7 +11,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span class="font-bold text-gray-800">{{ __('Krunska 77, Belgrade') }}</span>
+                <span class="font-bold text-gray-800">{{ __('') }}</span>
             </div>
             <div class="flex items-center space-x-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -26,7 +26,7 @@
                 <span class="font-bold text-gray-800">{{ __('011 4159211') }}</span>
             </div>
             <div class="pt-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5661.788180707437!2d20.473306!3d44.803347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa017a04201%3A0x2220b5ec6b879afe!2sKrunska%2077%2C%20Beograd%2011000!5e0!3m2!1sen!2srs!4v1647872499072!5m2!1sen!2srs" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
