@@ -6,5 +6,9 @@ use Illuminate\Http\Request;
 
 class PatientController extends Controller
 {
-    //
+    public function __invoke(): Renderable
+    {
+
+        return view('admin.patients');
+    }
 }

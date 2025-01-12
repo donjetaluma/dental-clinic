@@ -6,8 +6,12 @@ use Livewire\Component;
 
 class PatientsList extends Component
 {
-    public function render()
+
+    public function render(): Renderable
     {
-        return view('livewire.patients-list');
+    
+        return view('livewire.patients-list', [
+            'patients' => $patients
+        ]);
     }
 }

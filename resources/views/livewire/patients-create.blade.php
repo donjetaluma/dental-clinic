@@ -5,7 +5,7 @@
         </div>
     @endif
 <div class="p-8 space-y-4">
-        <form wire:submit.prevent="submit" class="space-y-4" id="updatePatientForm">
+        <form wire:submit.prevent="submit" class="space-y-4" id="updatePacientForm">
             <div class="w-full grid grid-cols-2 gap-16">
                 <div class="flex flex-col">
                     <label for="first_name">
