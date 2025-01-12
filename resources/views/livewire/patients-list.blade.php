@@ -54,7 +54,7 @@
                 @empty
                     <tr>
                         <td colspan="5" class="text-center py-8 font-bold">
-                            {{ __('test') }}
+                            {{ __('Save') }}
                         </td>
                     </tr>
                 @endforelse
@@ -159,32 +159,6 @@
                         @enderror
                     </div>
                 </form>
-                <div class="flex flex-col">
-                    <label for="default_select">{{ __('Date and time') }}</label>
-                    <div class="flex space-x-4">
-                        <input
-                            wire:model="state.date"
-                            type="date" 
-                            class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                        >
-                        <select 
-                            wire:model.defer="state.time"
-                            class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                        >
-                            @forelse ($times as $time)
-                                <option @if(in_array($time, $availableTimes)) class="text-gray-400" disabled @endif>{{ $time }}</option>
-                            @empty
-                                <option></option>
-                            @endforelse
-                        </select>
-                    </div>
-                    @error('date')
-                        <p class="text-sm text-red-600 font-bold mt-1">{{ $message }}</p>
-                    @enderror
-                    @error('date_and_time')
-                        <p class="text-sm text-red-600 font-bold mt-1">{{ $message }}</p>
-                    @enderror
-                </div>
                 <div class="pt-6 flex items-center justify-between">
                     <button type="submit" form="updatePatientForm" class="bg-primary hover:bg-primary-dark rounded-sm px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">
                         {{ __('Save') }}
