@@ -16,7 +16,7 @@ class PatientsCreate extends Component
 
         $this->reset('state');
 
-        session()->flash('patientCreated', __('Appointment successfully created.'));
+        session()->flash('patientCreated', __('Patient successfully created.'));
     }
 
     public function render(): Renderable
