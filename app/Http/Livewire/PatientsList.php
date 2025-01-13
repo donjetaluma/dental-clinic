@@ -26,10 +26,8 @@ class PatientsList extends Component
         session()->flash('patientDeleted', __('Patient successfully deleted.'));
     }
 
-    public function render(): Renderable
+    public function render()
     {
-        return view('livewire.patients-list', [
-            'patients' => $patients
-        ]);
+        return view('livewire.patients-list');
     }
 }
