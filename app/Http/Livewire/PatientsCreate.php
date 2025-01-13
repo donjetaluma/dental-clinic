@@ -9,14 +9,6 @@ use Illuminate\Contracts\Support\Renderable;
 
 class PatientsCreate extends Component
 {
-    public function submit(CreatesPatient $creator): void
-    {
-        $creator($this->state);
-
-        $this->reset('state');
-
-        session()->flash('updatePacient', __('Patient successfully created.'));
-    }
 
     public function render()
     {
