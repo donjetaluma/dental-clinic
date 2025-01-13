@@ -20,6 +20,6 @@ class PatientsCreate extends Component
 
     public function render()
     {
-        return view('livewire.patients-list');
+        return view('livewire.patients');
     }
 }
