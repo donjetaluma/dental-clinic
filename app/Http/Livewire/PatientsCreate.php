@@ -15,11 +15,11 @@ class PatientsCreate extends Component
 
         $this->reset('state');
 
-        session()->flash('patientCreated', __('Patient successfully created.'));
+        session()->flash('updatePacient', __('Patient successfully created.'));
     }
 
     public function render()
     {
-        return view('livewire.patients-create');
+        return view('livewire.patients-list');
     }
 }
