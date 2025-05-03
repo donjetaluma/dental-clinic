@@ -4,10 +4,14 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class CreatesPatient extends Component
+namespace App\Services;
+
+use App\Models\Patient;
+
+class CreatesPatient
 {
-    public function render()
+    public function create(array $data): Patient
     {
-        return view('livewire.patients-create');
+        return Patient::create($data);
     }
 }

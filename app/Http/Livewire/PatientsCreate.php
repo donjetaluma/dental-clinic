@@ -5,15 +5,24 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Patient;
 use Carbon\Carbon;
+use App\Services\PatientCreator;
 use Illuminate\Contracts\Support\Renderable;
+
+use App\Services\CreatesPatient;
 
 class PatientsCreate extends Component
 {
     public $state = [];
+    protected CreatesPatient $creator;
 
-    public function submit(CreatesPatient $creator): void
+    public function mount(CreatesPatient $creator): void
     {
-        $creator($this->state);
+        $this->creator = $creator;
+    }
+
+    public function submit(): void
+    {
+        $this->creator->create($this->state); // call a method instead of calling the object directly
 
         $this->reset('state');
 
