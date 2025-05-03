@@ -9,6 +9,7 @@ use Illuminate\Contracts\Support\Renderable;
 
 class PatientsCreate extends Component
 {
+    public $state = [];
 
     public function submit(CreatesPatient $creator): void
     {
@@ -19,7 +20,7 @@ class PatientsCreate extends Component
         session()->flash('patientCreated', __('Patient successfully created.'));
     }
 
-    public function render(): Renderable
+    public function render()
     {
         return view('livewire.patients-create');
     }
