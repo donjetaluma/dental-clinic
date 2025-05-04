@@ -11,4 +11,3 @@ class CreatesPatient
         return Patient::create($data);
     }
 }
-
