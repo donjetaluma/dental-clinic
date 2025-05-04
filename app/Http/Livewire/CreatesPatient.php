@@ -4,7 +4,7 @@ namespace App\Services;
 
 use App\Models\Patient;
 
-class CreatesPatient
+class PatientsCreate
 {
     public function create(array $data): Patient
     {
