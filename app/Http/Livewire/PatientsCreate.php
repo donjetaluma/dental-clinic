@@ -8,7 +8,6 @@ use Carbon\Carbon;
 use App\Services\PatientCreator;
 use Illuminate\Contracts\Support\Renderable;
 
-use App\Services\CreatesPatient;
 
 class PatientsCreate extends Component
 {
