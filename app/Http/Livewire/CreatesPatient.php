@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
 namespace App\Http\Livewire;
 
 
 use Livewire\Component;
-use App\Models\Patient;
+use App\Models\Patient as PatientsApp;
 use Carbon\Carbon;
 use App\Services\PatientCreator;
 use Illuminate\Contracts\Support\Renderable;
@@ -14,9 +13,9 @@ use Illuminate\Contracts\Support\Renderable;
 class PatientsCreate extends Component
 {
     public $state = [];
-    protected CreatesPatient $creator;
+    protected PatientsCreate $creator;
 
-    public function mount(CreatesPatient $creator): void
+    public function mount(PatientsCreate $creator): void
     {
         $this->creator = $creator;
     }
