@@ -1,6 +1,8 @@
 <?php
 
+namespace App\Http\Controllers;
 namespace App\Http\Livewire;
+
 
 use Livewire\Component;
 use App\Models\Patient;
