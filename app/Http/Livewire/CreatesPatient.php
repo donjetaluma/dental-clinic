@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 
 use Livewire\Component;
-use App\Models\Patient as PatientsApp;
+use App\Models\Patient;
 use Carbon\Carbon;
 use App\Services\PatientCreator;
 use Illuminate\Contracts\Support\Renderable;
