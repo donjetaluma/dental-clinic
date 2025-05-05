@@ -1,5 +1,5 @@
 <div>
-    @if(session('patientCreated'))
+@if(session('patientCreated'))
         <div class="w-3/4 md:w-2/3 lg:w-1/2 mx-auto text-center bg-green-200 text-green-800 px-16 py-2 rounded mb-4">
             {{ session('patientCreated') }}
         </div>
